@@ -23,6 +23,10 @@ const theme = createTheme({
     },
   },
 
+  typography: {
+    fontFamily: "outfit",
+  },
+
   components: {
     MuiButton: {
       defaultProps: {

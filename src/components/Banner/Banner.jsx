@@ -6,7 +6,13 @@ import jetIcon from "../../assests/Group 2609642.svg";
 
 function Banner() {
   return (
-    <Box sx={{ flexGrow: 1, padding: 1, mt: 1 }}>
+    <Box
+      sx={{
+        flexGrow: 1,
+        padding: 1,
+        mt: 1,
+      }}
+    >
       <Grid container spacing={6} alignItems="center">
         <Grid item xs={12} md={6} mb={8}>
           <Grid>
@@ -43,7 +49,17 @@ function Banner() {
           <Typography variant="h3" sx={{ fontWeight: "bold" }}>
             Memorable Events with
           </Typography>
-          <Typography variant="h3">Reisty</Typography>
+          <Typography
+            variant="h2"
+            className="bgReisty"
+            sx={{
+              fontWeight: "bold",
+              color: Colors.primary,
+              marginBottom: "16px",
+            }}
+          >
+            Reisty
+          </Typography>
           <Typography
             variant="body2"
             component="p"

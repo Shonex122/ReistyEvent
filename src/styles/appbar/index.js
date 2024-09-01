@@ -27,3 +27,13 @@ export const MyList = styled(List)(({ type }) => ({
   alignItems: "center",
   textAlign: "center",
 }));
+
+export const ActionIconsContainerMobile = styled(Box)(() => ({
+  display: "flex",
+  position: "fixed",
+  zIndex: 99,
+  alignItems: "center",
+}));
+export const ActionIconsContainerDesktop = styled(Box)(() => ({
+  flexGrow: 0,
+}));

@@ -1,30 +1,28 @@
 import { Container, ThemeProvider } from "@mui/material";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import theme from "./styles/themes";
-
-import LandingPage from "./pages/LandingPage/LandingPage";
-import LoginSignup from "./pages/LoginSignup";
-import Navbar from "./components/Navbar/Navbar";
+import { Routes, Route } from "react-router-dom";
+import SignupPage from "./pages/auth/SignupPage";
+import LandingPage from "./pages/screens/LandingPage/LandingPage";
+import "./App.css";
+import LoginPage from "./pages/auth/Login";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <ThemeProvider theme={theme}>
-          <Container
-            maxWidth="lg"
-            sx={{
-              background: "#fff",
-            }}
-          >
-            <Navbar />
-            <LandingPage />
-          </Container>
-        </ThemeProvider>
-        <Routes>
-          <Route path="/login" element={<LoginSignup />} />
-        </Routes>
-      </BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <Container
+          maxWidth="lg"
+          sx={{
+            background: "#fff",
+          }}
+        >
+          <Routes>
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/SignUp" element={<SignupPage />} />
+            <Route path="/" element={<LandingPage />} />
+          </Routes>
+        </Container>
+      </ThemeProvider>
     </>
   );
 }
