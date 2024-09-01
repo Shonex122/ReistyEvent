@@ -10,7 +10,7 @@ body {
 }
 
 .bgReisty {
-  background-image: url("../../reistyevent/src/assests/Rectangle\ 3.svg");
+  /* background-image: url("../../reistyevent/src/assests/Rectangle\ 3.svg"); */
   background-size: contain;
   background-repeat: no-repeat;
 }
