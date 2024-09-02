@@ -23,11 +23,15 @@ function LoginSignup() {
   return (
     <Container
       maxWidth="sm"
-      sx={{ border: "1px solid red", minHeight: "100vh" }}
+      sx={{
+        boxShadow: "0px 4px 12px rgba(0,0,0, 0.1) ",
+        borderRadius: "20px",
+        minHeight: "100vh",
+      }}
     >
       <Box sx={{ marginTop: "20px", bgcolor: "#FFFFFF", mb: 4 }}>
         <Link to="/">
-          <img src={G} alt="" />
+          <img src={G} alt="" style={{ marginTop: "15px" }} />
         </Link>
         <Typography variant="h4" sx={{ marginTop: "32px", fontWeight: "500" }}>
           Welcome to Reisty
